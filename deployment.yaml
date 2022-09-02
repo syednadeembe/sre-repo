@@ -18,7 +18,7 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: webserver-deployment
+  name: webserver
   anotations:
     fluxcd.io/tag.webserver: html-server-image:v*
     fluxcd.io/automated: "true"
