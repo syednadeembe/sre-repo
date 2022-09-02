@@ -35,7 +35,7 @@ spec:
         app.kubernetes.io/name: webserver
     spec:
       containers:
-      - name: webserver-2
+      - name: webserver
         image: html-server-image:v1
         ports:
         - containerPort: 80
