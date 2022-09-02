@@ -23,7 +23,7 @@ metadata:
     app.kubernetes.io/name: webserver
   annotations:
     fluxcd.io/automated: 'true'
-    fluxcd.io/tag.webserver: glob:1.0*
+    fluxcd.io/tag.webserver: glob:1.0.*
 spec:
   replicas: 1
   selector:
