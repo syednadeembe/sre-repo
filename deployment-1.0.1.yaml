@@ -16,7 +16,7 @@ spec:
     nodePort: 30007
 ---
 apiVersion: apps/v1
-kind: Deployment
+kind: Deployment-new
 metadata:
   name: webserver
   labels:
