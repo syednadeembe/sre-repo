@@ -19,6 +19,9 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: webserver-deployment
+  anotations:
+    fluxcd.io/tag.webserver: semver:~1.0
+    fluxcd.io/automated: ’true’
   labels:
     app.kubernetes.io/name: webserver
 spec:
