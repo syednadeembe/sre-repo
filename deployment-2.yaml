@@ -19,9 +19,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: webserver
-  anotations:
-    fluxcd.io/tag.webserver: html-server-image:v*
-    fluxcd.io/automated: "true"
   labels:
     app.kubernetes.io/name: webserver
 spec:
