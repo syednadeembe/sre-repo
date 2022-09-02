@@ -14,9 +14,9 @@ spec:
     nodePort: 30007
 ---
 apiVersion: apps/v1
-kind: Deployment-new
+kind: Deployment
 metadata:
-  name: webserver
+  name: new-webserver
   labels:
     app.kubernetes.io/name: webserver
 
