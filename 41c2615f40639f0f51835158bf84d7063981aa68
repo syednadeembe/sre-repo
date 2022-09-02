@@ -1,0 +1,1 @@
+{"jobID":"f790cd0e-a0a7-80b8-d259-2a1b8745769d","spec":{"type":"policy","cause":{"Message":"","User":""},"spec":{"default:deployment/webserver":{"add":{"tag.webserver":"glob:1.0.*"},"remove":{}}}},"result":null}
