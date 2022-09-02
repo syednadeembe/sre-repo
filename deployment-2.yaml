@@ -9,11 +9,11 @@ spec:
     app.kubernetes.io/name: webserver
   ports:
       # By default and for convenience, the `targetPort` is set to the same value as the `port` field.
-    - port: 80
-      targetPort: 80
+  - port: 80
+    targetPort: 80
       # Optional field
       # By default and for convenience, the Kubernetes control plane will allocate a port from a range (default: 30000-32767)
-      nodePort: 30007
+    nodePort: 30007
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -21,6 +21,8 @@ metadata:
   name: webserver
   labels:
     app.kubernetes.io/name: webserver
+  annotations:
+    fluxcd.io/automated: 'true'
 spec:
   replicas: 1
   selector:
