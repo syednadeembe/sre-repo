@@ -35,6 +35,6 @@ spec:
     spec:
       containers:
       - name: webserver
-        image: syednadeembe/html-server-image:1.0.0
+        image: syednadeembe/html-server-image:v3
         ports:
         - containerPort: 80
